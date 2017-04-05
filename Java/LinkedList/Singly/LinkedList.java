@@ -84,7 +84,7 @@ public class LinkedList<T> implements List<T> {
 
 			if (n2.getData().toString().equals(data.toString())) {
 
-				previousNode = n2.getNextNode();
+				previousNode.setNextNode(n2.getNextNode()); 
 				n2 = null;
 				return;
 			}
